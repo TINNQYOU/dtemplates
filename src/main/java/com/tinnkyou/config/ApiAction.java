@@ -12,9 +12,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @create 2019/06/19
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
+@Target({ElementType.TYPE,ElementType.METHOD})
 public @interface ApiAction {
     String name() default "";
     RequestMethod method() default RequestMethod.GET;
-    String params()[];
+    ApiAction.ParamsInfo[] params();
+    String desc() default "";
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.METHOD)
+    @interface ParamsInfo{
+        String value();
+        String type();
+        boolean required() default false;
+        String desc() default "";
+    }
 }
