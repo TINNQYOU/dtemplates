@@ -6,10 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * @author wb-cq355812
- * @create 2019/06/19
- */
+
 @Controller
 @RequestMapping(value = "/rootUrl")
 @ApiAction(name = "/rootUrl",desc = "测试的控制类",params = {})
@@ -19,6 +16,7 @@ public class TestController {
         params = {@ApiAction.ParamsInfo(type = "int",value = "age"),
                   @ApiAction.ParamsInfo(type = "string",value = "name")})
     public String testContro(String name,String age){
+        System.out.println(name + " " + age);
         return "";
     }
     @RequestMapping(value = "/getUser",method = RequestMethod.POST)
