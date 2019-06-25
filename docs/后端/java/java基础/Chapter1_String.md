@@ -16,6 +16,9 @@
 解析:
 String是不可变的 StringBuffer和StringBuider是可变的 ,StringBuffer是线程安全(因为每个方法都用了synchronized进行修饰)的StringBuider是线程不安全的
 ![2019-06-06_114017.png-51.8kB][2]
+![图拍你](../../../../src/main/resources/images/21.jpg)
+
+
 **总结:**
 
 - 在字符串不经常发生变化的业务场景优先使用String(代码更清晰简洁)。如常量的声明，少量的字符串操作(拼接，删除等)。
