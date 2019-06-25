@@ -2,6 +2,8 @@
 ### 1.1.1 String类为什么是final的。
 解析:首先理解final关键字的意义
 
+![laji](../../../../src/main/resources/images/qqqqq.png)
+
 - 被final修饰的类不能被继承，即它不能拥有自己的子类
 - 被final修饰的方法不能被重写
 - final修饰的变量，无论是类属性、对象属性、形参还是局部变量，都需要进行初始化操作。
@@ -16,7 +18,6 @@
 解析:
 String是不可变的 StringBuffer和StringBuider是可变的 ,StringBuffer是线程安全(因为每个方法都用了synchronized进行修饰)的StringBuider是线程不安全的
 ![2019-06-06_114017.png-51.8kB][2]
-![图拍你](../../../../src/main/resources/images/21.jpg)
 
 
 **总结:**
