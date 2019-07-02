@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admindemo.chapter01.mapper.TSeckillMapper">
+    <insert id="insert" parameterType="com.admindemo.chapter01.bean.TSeckill">
+
+    </insert>
+    <update id="updateSeckill" parameterType="map">
+        update t_seckill
+        set num = num - #{buys}
+        where sku = #{sku} and num - #{buys} >=0
+    </update>
+</mapper>
