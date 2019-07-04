@@ -1,6 +1,6 @@
-package com.admindemo.chapter01.mapper;
+package com.admindemo.chapter01_seckill.mapper;
 
-import com.admindemo.chapter01.bean.TSeckill;
+import com.admindemo.chapter01_seckill.bean.TSeckill;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Map;

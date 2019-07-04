@@ -1,4 +1,4 @@
-package com.admindemo.chapter01.bean;
+package com.admindemo.chapter01_seckill.bean;
 
 import lombok.Getter;
 import lombok.Setter;

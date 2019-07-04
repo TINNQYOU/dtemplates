@@ -1,9 +1,7 @@
-package com.admindemo.chapter01.service;
+package com.admindemo.chapter01_seckill.service;
 
-import com.admindemo.chapter01.bean.TSeckill;
-import org.springframework.stereotype.Service;
+import com.admindemo.chapter01_seckill.bean.TSeckill;
 
-@Service
 public interface ITSeckillService {
     int deleteByPrimaryKey(Integer id);
     int insert(TSeckill record);

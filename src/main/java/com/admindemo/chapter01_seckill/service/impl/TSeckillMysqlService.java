@@ -1,8 +1,8 @@
-package com.admindemo.chapter01.service.impl;
+package com.admindemo.chapter01_seckill.service.impl;
 
-import com.admindemo.chapter01.bean.TSeckill;
-import com.admindemo.chapter01.mapper.TSeckillMapper;
-import com.admindemo.chapter01.service.ITSeckillService;
+import com.admindemo.chapter01_seckill.bean.TSeckill;
+import com.admindemo.chapter01_seckill.mapper.TSeckillMapper;
+import com.admindemo.chapter01_seckill.service.ITSeckillService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
