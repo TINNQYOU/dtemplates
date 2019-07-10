@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <p>
+                <span>2</span>
+            </p>
+            <span>1</span>
+        </li>
+    </ul>
+    <h1>input.onchange</h1>
+    <input type="file" name="">
+</body>
+<script type="text/javascript">
+    document.querySelector("li p span").style.color="red"
+    var input = document.querySelector("input");
+    input.onchange = function (ev) {
+
+        var fileList = this.files;
+        console.log(fileList)
+        var movie = fileList[0];
+        var reader = new FileReader();
+        reader.readAsBinaryString(movie);
+        reader.onload = function (ev1) {
+            console.log("success")
+        }
+        // for (var key in fileList){
+        //     //console.log(fileList[key])
+        //     var file = fileList[key]
+        //     console.log("name="+file.name)
+        //     console.log("size="+file.size)
+        //     console.log("last="+file.lastModified)
+        //
+        // }
+    }
+</script>
+</html>

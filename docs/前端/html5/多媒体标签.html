@@ -8,4 +8,20 @@
 <!--    controls是开启控制栏 autoplay:自动播放 loop:循环播放-->
     <video src="code/多媒体标签/trailer.mp4" controls autoplay loop></video>
 </body>
+    <script type="text/javascript">
+        //Video.canPlayType("avi")
+        var video = document.querySelector("video");
+        var iscan = video.canPlayType("avi");
+        console.log(iscan)
+        video.oncanplay = function (ev) {
+            console.log("can")
+        }
+    </script>
+    <style type="text/css">
+        video{
+            height: 100%;
+            display: none;
+            margin: auto;
+        }
+    </style>
 </html>
